@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <nav class="navbar">
+      <h1>🎓 University AI Assistant</h1>
+      <div class="mode-toggle">
+        <button id="chatBtn" class="mode-btn active">💬 Chat</button>
+        <button id="searchBtn" class="mode-btn">🔍 Search</button>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div id="chatMode" class="mode-panel active">
+        <div id="chatHistory" class="chat-history"></div>
+        <div class="input-group">
+          <input type="text" id="chatInput" placeholder="Ask about university programs..." aria-label="Chat">
+          <button id="chatSend">Send</button>
+        </div>
+      </div>
+
+      <div id="searchMode" class="mode-panel">
+        <div class="search-section">
+          <input type="text" id="searchInput" placeholder="Search university information..." aria-label="Search">
+          <button id="searchBtn2">Search</button>
+        </div>
+        <div id="searchResults" class="results"></div>
+      </div>
+
+      <div id="loading" class="loading hidden"></div>
+    </main>
+
+    <footer>
+      <p>🔒 Privacy-first | Local processing | WCAG AA Accessible</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
